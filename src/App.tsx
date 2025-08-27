@@ -398,7 +398,7 @@
 import React, { useState, useEffect } from "react";
 import { Heart, Users, Leaf, ArrowRight, Mail,Phone, MapPin, Calendar, Clock, Bell } from "lucide-react";
 
-Countdown Timer Component
+
 const CountdownTimer = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
