@@ -396,7 +396,7 @@
 // export default App;
 
 import React, { useState, useEffect } from "react";
-import { Heart, Users, Leaf, ArrowRight, Mail,Phone, MapPin, Calendar, Clock, Bell } from "lucide-react";
+import { Heart, Users, Leaf, ArrowRight, Mail, Calendar, Clock, Bell } from "lucide-react";
 
 
 const CountdownTimer = ({ targetDate }) => {
