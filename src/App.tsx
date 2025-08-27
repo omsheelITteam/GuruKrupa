@@ -493,7 +493,26 @@ interface PreviewCardProps {
 };
 
 // Preview Feature Card
-const PreviewCard = ({ icon: Icon, title, description, comingSoon = false }) => (
+// const PreviewCard = ({ icon: Icon, title, description, comingSoon = false }) => (
+//   <div className="group p-8 bg-white/5 backdrop-blur-sm rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-300 relative overflow-hidden">
+//     {comingSoon && (
+//       <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-xs font-bold text-gray-900 px-3 py-1 rounded-full">
+//         SOON
+//       </div>
+//     )}
+//     <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/10">
+//       <Icon className="w-8 h-8 text-blue-300" />
+//     </div>
+//     <h3 className="font-bold text-xl text-white mb-3 text-center">{title}</h3>
+//     <p className="text-blue-200 leading-relaxed text-center opacity-80">{description}</p>
+//   </div>
+// );
+const PreviewCard: React.FC<PreviewCardProps> = ({
+  icon: Icon,
+  title,
+  description,
+  comingSoon = false,
+}) => (
   <div className="group p-8 bg-white/5 backdrop-blur-sm rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-300 relative overflow-hidden">
     {comingSoon && (
       <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-xs font-bold text-gray-900 px-3 py-1 rounded-full">
@@ -507,7 +526,6 @@ const PreviewCard = ({ icon: Icon, title, description, comingSoon = false }) => 
     <p className="text-blue-200 leading-relaxed text-center opacity-80">{description}</p>
   </div>
 );
-
 // Hero Section with Launch Countdown
 const HeroSection = () => {
   // Set launch date to tomorrow at 6:59 AM
