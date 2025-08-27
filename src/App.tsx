@@ -399,50 +399,50 @@ import React, { useState, useEffect } from "react";
 import { Heart, Users, Leaf, ArrowRight, Mail, Calendar, Clock, Bell } from "lucide-react";
 
 
-const CountdownTimer = ({ targetDate }) => {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  });
+// const CountdownTimer = ({ targetDate }) => {
+//   const [timeLeft, setTimeLeft] = useState({
+//     days: 0,
+//     hours: 0,
+//     minutes: 0,
+//     seconds: 0
+//   });
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate.getTime() - now;
+//   useEffect(() => {
+//     const timer = setInterval(() => {
+//       const now = new Date().getTime();
+//       const distance = targetDate.getTime() - now;
 
-      if (distance > 0) {
-        setTimeLeft({
-          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((distance % (1000 * 60)) / 1000)
-        });
-      }
-    }, 1000);
+//       if (distance > 0) {
+//         setTimeLeft({
+//           days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+//           hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+//           minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+//           seconds: Math.floor((distance % (1000 * 60)) / 1000)
+//         });
+//       }
+//     }, 1000);
 
-    return () => clearInterval(timer);
-  }, [targetDate]);
+//     return () => clearInterval(timer);
+//   }, [targetDate]);
 
-  const TimeUnit = ({ value, label }) => (
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-white/20 flex-1 text-center">
-      <div className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-2">{value.toString().padStart(2, '0')}</div>
-      <div className="text-blue-200 font-semibold uppercase tracking-wide text-sm md:text-base">{label}</div>
-    </div>
-  );
+//   const TimeUnit = ({ value, label }) => (
+//     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-white/20 flex-1 text-center">
+//       <div className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-2">{value.toString().padStart(2, '0')}</div>
+//       <div className="text-blue-200 font-semibold uppercase tracking-wide text-sm md:text-base">{label}</div>
+//     </div>
+//   );
 
-  return (
-    <div className="flex gap-3 md:gap-6 lg:gap-8 w-full max-w-4xl mx-auto">
-      <TimeUnit value={timeLeft.days} label="Days" />
-      <TimeUnit value={timeLeft.hours} label="Hours" />
-      <TimeUnit value={timeLeft.minutes} label="Minutes" />
-      <TimeUnit value={timeLeft.seconds} label="Seconds" />
-    </div>
-  );
-};
+//   return (
+//     <div className="flex gap-3 md:gap-6 lg:gap-8 w-full max-w-4xl mx-auto">
+//       <TimeUnit value={timeLeft.days} label="Days" />
+//       <TimeUnit value={timeLeft.hours} label="Hours" />
+//       <TimeUnit value={timeLeft.minutes} label="Minutes" />
+//       <TimeUnit value={timeLeft.seconds} label="Seconds" />
+//     </div>
+//   );
+// };
 
-// Email Signup Component
+
 const EmailSignup = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
