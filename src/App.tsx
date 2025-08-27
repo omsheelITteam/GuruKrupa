@@ -441,7 +441,7 @@
 //     </div>
 //   );
 // };
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Heart, Users, Leaf, ArrowRight, Mail, Calendar, Clock, Bell } from "lucide-react";
 const EmailSignup = () => {
   const [email, setEmail] = useState('');
