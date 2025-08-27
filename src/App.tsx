@@ -395,8 +395,8 @@
 
 // export default App;
 
-import React, { useState, useEffect } from "react";
-import { Heart, Users, Leaf, ArrowRight, Mail, Calendar, Clock, Bell } from "lucide-react";
+// import React, { useState, useEffect } from "react";
+// import { Heart, Users, Leaf, ArrowRight, Mail, Calendar, Clock, Bell } from "lucide-react";
 
 
 // const CountdownTimer = ({ targetDate }) => {
@@ -442,7 +442,7 @@ import { Heart, Users, Leaf, ArrowRight, Mail, Calendar, Clock, Bell } from "luc
 //   );
 // };
 
-
+import { Heart, Users, Leaf, ArrowRight, Mail, Calendar, Clock, Bell } from "lucide-react";
 const EmailSignup = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
