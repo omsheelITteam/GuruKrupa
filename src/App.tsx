@@ -444,16 +444,17 @@
 import { useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import { Heart, Users, Leaf, ArrowRight, Mail, Calendar, Clock, Bell } from "lucide-react";
-const EmailSignup = () => {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-
 interface PreviewCardProps {
   icon: LucideIcon;
   title: string;
   description: string;
   comingSoon?: boolean;
 }
+const EmailSignup = () => {
+  const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
+
+
 
   const handleSubmit = () => {
     if (email) {
