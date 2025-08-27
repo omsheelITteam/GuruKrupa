@@ -442,7 +442,7 @@
 //   );
 // };
 import { useState } from "react";
-import { LucideIcon } from "lucide-react"; 
+import type { LucideIcon } from "lucide-react";
 import { Heart, Users, Leaf, ArrowRight, Mail, Calendar, Clock, Bell } from "lucide-react";
 const EmailSignup = () => {
   const [email, setEmail] = useState('');
