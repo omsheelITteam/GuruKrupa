@@ -552,10 +552,10 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto w-full">
-        <div className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 backdrop-blur-sm border border-yellow-400/30 rounded-full px-6 py-3 mb-8">
-          <Clock className="w-5 h-5 text-yellow-400" />
+{/*         <div className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 backdrop-blur-sm border border-yellow-400/30 rounded-full px-6 py-3 mb-8"> */}
+{/*           <Clock className="w-5 h-5 text-yellow-400" /> */}
 {/*           <span className="text-yellow-200 font-semibold">Launching Tomorrow 6:59:59 AM</span> */}
-        </div>
+{/*         </div> */}
 
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-black text-white mb-6 leading-tight">
           <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
@@ -644,10 +644,10 @@ const Footer = () => (
           <p className="text-gray-400 leading-relaxed mb-6">
             Preparing to create lasting change through compassion, education, and sustainable community development.
           </p>
-          <div className="inline-flex items-center gap-3 bg-yellow-500/20 border border-yellow-400/30 rounded-full px-4 py-2">
-            <Calendar className="w-4 h-4 text-yellow-400" />
+{/*           <div className="inline-flex items-center gap-3 bg-yellow-500/20 border border-yellow-400/30 rounded-full px-4 py-2">
+{/*             <Calendar className="w-4 h-4 text-yellow-400" /> */}
 {/*             <span className="text-yellow-200 text-sm font-semibold">Launching Tomorrow 6:59:59 AM</span> */}
-          </div>
+          // </div> */}
         </div>
         <div className="flex justify-center md:justify-end items-center">
           <div className="text-center md:text-right">
